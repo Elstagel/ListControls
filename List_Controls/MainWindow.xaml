@@ -6,36 +6,48 @@
         xmlns:local="clr-namespace:List_Controls"
         mc:Ignorable="d"
         Title="Kosmos" Height="500" Width="850" WindowStartupLocation="CenterScreen">
-    <Grid>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Language">
+                <MenuItem Header="Russian" Click="MenuItem_Click_1"/>
+                <MenuItem Header="English" Click="MenuItem_Click_2"/>
+                <MenuItem Header="France"  Click="MenuItem_Click_3"/>
+            </MenuItem>
+        </Menu>
         <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="0.3*"/>   
-                <RowDefinition/>   
-            </Grid.RowDefinitions>
-            <Image Grid.Row="0"  Source="/img/1.jpg" Stretch="Fill"/>
-            <StackPanel Grid.Row="1">
-                <TabControl TabStripPlacement="Left">
-                    <TabItem Header="Главная">
-                        <StackPanel>
-                            <TextBlock FontSize="36" TextWrapping="Wrap" Foreground="#FFAAECED" MinHeight="350">
-                                <TextBlock.Background>
-                                    <ImageBrush ImageSource="/img/3.jpg" TileMode="None" Stretch="Fill"/>
-                                </TextBlock.Background>
-                               Здесь собраны лучшие материалы по космосу!
-                                <LineBreak/>
-                               Информация проверена и каждый день обновлется, благадоря общими усилиями!
-                            </TextBlock>
-                        </StackPanel>
-                    </TabItem>
-                    <TabItem Header="Солнечная система">
-                        <StackPanel>
-                            <StackPanel.Background>
-                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                    <GradientStop Color="#FF543770"/>
-                                    <GradientStop Color="#FFFFA7A7" Offset="1"/>
-                                </LinearGradientBrush>
-                            </StackPanel.Background>
-                            <TextBlock TextWrapping="Wrap">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.3*"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Image Grid.Row="0"  Source="/img/1.jpg" Stretch="Fill"/>
+                <StackPanel Grid.Row="1">
+                    <TabControl TabStripPlacement="Left">
+                        <TabItem Header="Главная" Name="TabMain">
+                            <StackPanel>
+                                <TextBlock x:Name="TextMain" FontSize="30" TextWrapping="Wrap" Foreground="#FFAAECED" MinHeight="350"  Margin="5">
+                                    <TextBlock.Background>
+                                        <ImageBrush ImageSource="/img/3.jpg" TileMode="None" Stretch="Fill"/>
+                                    </TextBlock.Background>
+                                     Здесь собраны лучшие материалы по космосу!
+                                    <LineBreak/>
+                                     Информация проверена и каждый день обновлется, благадоря общими усилиями!
+                                     <LineBreak/>
+                                     На данный момент наши профессионалы переводят сайт на разные языки поэтому в данный момент не все переведенно.
+                                     <LineBreak/>
+                                     В скором времени мы это исправим!!
+                                </TextBlock>
+                            </StackPanel>
+                        </TabItem>
+                        <TabItem Header="Солнечная система" Name="TabSolarSystem">
+                            <StackPanel>
+                                <StackPanel.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="#FF543770"/>
+                                        <GradientStop Color="#FFFFA7A7" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </StackPanel.Background>
+                                <TextBlock TextWrapping="Wrap"  Name="TextSolarSystem">
                                 Со́лнечная систе́ма — планетная система, включающая в себя центральную звезду Солнце и все естественные космические объекты на 
                                 гелиоцентрических орбитах.
                                 Она сформировалась путём гравитационного сжатия газопылевого облака примерно 4,57 млрд лет назад.
@@ -55,19 +67,19 @@
                                 состоящие из замёрзшей воды, аммиака и метана, крупнейшими из которых являются Плутон, Седна, Хаумеа, Макемаке, 
                                 Квавар, Орк и Эрида. В Солнечной системе существуют и другие популяции малых тел, такие как планетные квазиспутники 
                                 и троянцы, околоземные астероиды, кентавры, дамоклоиды, а также перемещающиеся по системе кометы, метеороиды и космическая пыль.
-                            </TextBlock>
-                        </StackPanel>
-                    </TabItem>
-                    <TabItem Header="Структура">
-                        <StackPanel>
-                            <StackPanel.Background>
-                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                    <GradientStop Color="#FFFFA7A7"/>
-                                    <GradientStop Color="#FF4C046F" Offset="1"/>
-                                </LinearGradientBrush>
-                            </StackPanel.Background>
+                                </TextBlock>
+                            </StackPanel>
+                        </TabItem>
+                        <TabItem Header="Структура" Name="TabStruct">
+                            <StackPanel>
+                                <StackPanel.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="#FFFFA7A7"/>
+                                        <GradientStop Color="#FF4C046F" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </StackPanel.Background>
 
-                            <TextBlock TextWrapping="Wrap">
+                                <TextBlock TextWrapping="Wrap" Margin="5" Name="TextStruct">
                                 Центральным объектом Солнечной системы является Солнце — звезда главной последовательности спектрального класса G2V, жёлтый карлик. 
                                 В Солнце сосредоточена подавляющая часть всей массы системы (около 99,866 %), оно удерживает своим 
                                 тяготением планеты и прочие тела, принадлежащие к Солнечной системе. Четыре крупнейших объекта —
@@ -84,19 +96,19 @@
                                 Бо́льшая часть планет вращается вокруг своей оси в ту же сторону, что и обращается вокруг Солнца. Исключения составляют Венера и Уран,
                                 причём Уран вращается практически «лёжа на боку» (наклон оси около 90°). 
                                 Для наглядной демонстрации вращения используется специальный прибор — теллурий.
-                            </TextBlock>
-                        </StackPanel>
-                    </TabItem>
-                    <TabItem Header="Солнце">
-                        <StackPanel>
-                            <StackPanel.Background>
-                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                    <GradientStop Color="#FF4C046F"/>
-                                    <GradientStop Color="#FF77290C" Offset="1"/>
-                                </LinearGradientBrush>
-                            </StackPanel.Background>
+                                </TextBlock>
+                            </StackPanel>
+                        </TabItem>
+                        <TabItem Header="Солнце" Name="TabSun">
+                            <StackPanel>
+                                <StackPanel.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="#FF4C046F"/>
+                                        <GradientStop Color="#FF77290C" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </StackPanel.Background>
 
-                            <TextBlock TextWrapping="Wrap">
+                                <TextBlock TextWrapping="Wrap" Margin="5" Name="TextSun">
                                 Солнце — звезда Солнечной системы и её главный компонент. Его масса (332 900 масс Земли) достаточно велика для поддержания 
                                 термоядерной реакции в его недрах, при которой высвобождается большое количество энергии, излучаемой в пространство в основном
                                 в виде электромагнитного излучения, максимум которого приходится на диапазон длин волн 400—700 нм, соответствующий видимому свету.
@@ -119,19 +131,19 @@
                                 мало металлов, а более молодые звёзды содержат их больше. Предполагается, что высокая металличность была крайне важна для
                                 образования у Солнца планетной системы, потому что планеты формируются аккрецией «металлов».
                                 <LineBreak/>
-                            </TextBlock>
-                        </StackPanel>
-                    </TabItem>
-                    <TabItem Header="Меркурий">
-                        <StackPanel>
-                            <StackPanel.Background>
-                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                    <GradientStop Color="#FF77290C"/>
-                                    <GradientStop Color="#FF9A0D47" Offset="1"/>
-                                </LinearGradientBrush>
-                            </StackPanel.Background>
+                                </TextBlock>
+                            </StackPanel>
+                        </TabItem>
+                        <TabItem Header="Меркурий" Name="TabMercury">
+                            <StackPanel>
+                                <StackPanel.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="#FF77290C"/>
+                                        <GradientStop Color="#FF9A0D47" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </StackPanel.Background>
 
-                            <TextBlock TextWrapping="Wrap">
+                                <TextBlock TextWrapping="Wrap" Margin="5" Name="TextMercury">
                                 Мерку́рий — наименьшая планета Солнечной системы и самая близкая к Солнцу. Названа в
                                 честь древнеримского бога торговли — быстрого Меркурия, 
                                 поскольку она движется по небу быстрее других планет. Её период обращения вокруг Солнца составляет всего 87,97 земных суток — 
@@ -149,19 +161,19 @@
                                 температура его поверхности меняется сильнее, чем на любой другой планете Солнечной системы: от 100 К (−173 °C) ночью
                                 до 700 К (+427 °C) днём в экваториальных регионах[12]. Полярные области постоянно охлаждены ниже 180 К (−93 °С).
                                 Известных природных спутников у планеты нет.
-                            </TextBlock>
-                        </StackPanel>
-                    </TabItem>
-                    <TabItem Header="Винера">
-                        <StackPanel>
-                            <StackPanel.Background>
-                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                    <GradientStop Color="#FF9A0D47"/>
-                                    <GradientStop Color="#FF61B500" Offset="1"/>
-                                </LinearGradientBrush>
-                            </StackPanel.Background>
+                                </TextBlock>
+                            </StackPanel>
+                        </TabItem>
+                        <TabItem Header="Винера" Name="TabVenus">
+                            <StackPanel>
+                                <StackPanel.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="#FF9A0D47"/>
+                                        <GradientStop Color="#FF61B500" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </StackPanel.Background>
 
-                            <TextBlock TextWrapping="Wrap">
+                                <TextBlock TextWrapping="Wrap"  Margin="5"  Name="TextVenus">
                                 Вене́ра — вторая по удалённости от Солнца и шестая по размеру планета Солнечной системы, наряду с Меркурием, Землёй и Марсом
                                 принадлежащая к семейству планет земной группы. Названа в честь древнеримской богини любви Венеры. По ряду характеристик —
                                 например, по массе и размерам — Венера считается «сестрой» Земли. Венерианский год составляет 224,7 земных суток. Она имеет
@@ -180,18 +192,18 @@
                                 что Меркурий находится ближе к Солнцу. Венера покрыта непрозрачным слоем облаков из серной кислоты с высокой отражающей 
                                 способностью, что, помимо всего прочего, закрывает поверхность планеты от прямой видимости. Высокая температура поверхности 
                                 обусловлена действием парникового эффекта.
-                            </TextBlock>
-                        </StackPanel>
-                    </TabItem>
-                    <TabItem Header="Земля">
-                        <StackPanel>
-                            <StackPanel.Background>
-                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                    <GradientStop Color="#FF61B500"/>
-                                    <GradientStop Color="#FF007E80" Offset="1"/>
-                                </LinearGradientBrush>
-                            </StackPanel.Background>
-                            <TextBlock TextWrapping="Wrap">
+                                </TextBlock>
+                            </StackPanel>
+                        </TabItem>
+                        <TabItem Header="Земля" Name="TabEarth">
+                            <StackPanel>
+                                <StackPanel.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="#FF61B500"/>
+                                        <GradientStop Color="#FF007E80" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </StackPanel.Background>
+                                <TextBlock TextWrapping="Wrap" Margin="5" Name="TextEarth">
                                 Земля́ — третья по удалённости от Солнца планета Солнечной системы. Самая плотная, пятая по диаметру и массе среди всех 
                                 планет Солнечной системы и крупнейшая среди планет земной группы, в которую входят также Меркурий, Венера и Марс. Единственное
                                 известное человеку в настоящее время тело во Вселенной, населённое живыми организмами.
@@ -211,18 +223,18 @@
                                 Жидкая вода, необходимая для всех известных жизненных форм, не существует на поверхности какой-либо из известных планет 
                                 и планетоидов Солнечной системы, кроме Земли. Полюсы Земли покрыты ледяным панцирем, который включает в себя морской лёд 
                                 Арктики и антарктический ледяной щит.
-                            </TextBlock>
-                        </StackPanel>
-                    </TabItem>
-                    <TabItem Header="Марс">
-                        <StackPanel>
-                            <StackPanel.Background>
-                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                    <GradientStop Color="#FF007E80"/>
-                                    <GradientStop Color="#FF585858" Offset="1"/>
-                                </LinearGradientBrush>
-                            </StackPanel.Background>
-                            <TextBlock TextWrapping="Wrap">
+                                </TextBlock>
+                            </StackPanel>
+                        </TabItem>
+                        <TabItem Header="Марс" Name="TabMars">
+                            <StackPanel>
+                                <StackPanel.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="#FF007E80"/>
+                                        <GradientStop Color="#FF585858" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </StackPanel.Background>
+                                <TextBlock TextWrapping="Wrap"  Margin="5" Name="TextMars">
                                  Марс — четвёртая по удалённости от Солнца и седьмая по размеру планета Солнечной системы; масса планеты составляет 10,7 %
                                 массы Земли.Перейти к разделу «#Основные сведения» Названа в честь Марса — древнеримского бога войны, соответствующего
                                 древнегреческому Аресу.Перейти к разделу «#В античной мифологии» Также Марс называют «красной планетой» из-за красноватого 
@@ -241,19 +253,19 @@
                                 космическое агентство (программа «Марс-экспресс»),
                                 Индия (программа «Мангальян») и Китай (Тяньвэнь-1, Чжужун). На сегодняшний день Марс — наиболее подробно изученная планета Солнечной 
                                 системы после Земли.Перейти к разделу.
-                            </TextBlock>
-                        </StackPanel>
-                    </TabItem>
-                    <TabItem Header="Юпитер">
-                        <StackPanel>
-                            <StackPanel.Background>
-                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                    <GradientStop Color="#FF585858"/>
-                                    <GradientStop Color="#FF7D1818" Offset="1"/>
-                                </LinearGradientBrush>
-                            </StackPanel.Background>
+                                </TextBlock>
+                            </StackPanel>
+                        </TabItem>
+                        <TabItem Header="Юпитер" Name="TabJupiter">
+                            <StackPanel>
+                                <StackPanel.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="#FF585858"/>
+                                        <GradientStop Color="#FF7D1818" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </StackPanel.Background>
 
-                            <TextBlock TextWrapping="Wrap">
+                                <TextBlock TextWrapping="Wrap" Margin="5" Name="TextJupiter">
                                 Юпи́тер — крупнейшая планета Солнечной системы, пятая по удалённости от Солнца. Наряду с Сатурном, Юпитер классифицируется
                                 как газовый гигант.
                                 <LineBreak/>
@@ -275,18 +287,18 @@
                                 объектами наблюдения для астрономов-любителей, сделавших ряд открытий (например, кометы Шумейкеров-Леви, которая 
                                 столкнулась с Юпитером в 1994 году,Перейти к разделу «#Столкновения небесных тел с Юпитером» или исчезновения Южного
                                 экваториального пояса Юпитера в 2010 году).
-                            </TextBlock>
-                        </StackPanel>
-                    </TabItem>
-                    <TabItem Header="Сатурн">
-                        <StackPanel>
-                            <StackPanel.Background>
-                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                    <GradientStop Color="#FF7D1818"/>
-                                    <GradientStop Color="#FF5548B1" Offset="1"/>
-                                </LinearGradientBrush>
-                            </StackPanel.Background>
-                            <TextBlock TextWrapping="Wrap">
+                                </TextBlock>
+                            </StackPanel>
+                        </TabItem>
+                        <TabItem Header="Сатурн" Name="TabSaturn">
+                            <StackPanel>
+                                <StackPanel.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="#FF7D1818"/>
+                                        <GradientStop Color="#FF5548B1" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </StackPanel.Background>
+                                <TextBlock TextWrapping="Wrap" Margin="5" Name="TextSaturn">
                                 Сату́рн — шестая планета по удалённости от Солнца и вторая по размерам планета в Солнечной системе после Юпитера.
                                 Сатурн классифицируется как газовая планета-гигант. Сатурн назван в честь римского бога земледелия.Перейти к 
                                 разделу «#Сатурн в культуре» Символ Сатурна — ♄.
@@ -309,18 +321,18 @@
                                 На орбите Сатурна находилась автоматическая межпланетная станция (АМС) «Кассини», запущенная в 1997 году
                                 и достигшая системы Сатурна в 2004 году. В задачи АМС входило изучение структуры колец, а также динамики
                                 атмосферы и магнитосферы планеты. 15 сентября 2017 года станция завершила свою миссию, сгорев в атмосфере планеты.
-                            </TextBlock>
-                        </StackPanel>
-                    </TabItem>
-                    <TabItem Header="Уран">
-                        <StackPanel>
-                            <StackPanel.Background>
-                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                    <GradientStop Color="#FF5548B1"/>
-                                    <GradientStop Color="#FF23796F" Offset="1"/>
-                                </LinearGradientBrush>
-                            </StackPanel.Background>
-                            <TextBlock TextWrapping="Wrap">
+                                </TextBlock>
+                            </StackPanel>
+                        </TabItem>
+                        <TabItem Header="Уран" Name="TabUranus">
+                            <StackPanel>
+                                <StackPanel.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="#FF5548B1"/>
+                                        <GradientStop Color="#FF23796F" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </StackPanel.Background>
+                                <TextBlock TextWrapping="Wrap"  Margin="5" Name="TextUranus">
                                 Ура́н — планета Солнечной системы, седьмая по удалённости от Солнца, третья по диаметру и четвёртая по массе. 
                                 Была открыта в 1781 году английским астрономом Уильямом Гершелем и названа в честь греческого бога неба Урана.
                                 <LineBreak/>
@@ -346,18 +358,18 @@
                                 для других планет-гигантов. Однако в настоящее время наземными наблюдениями удалось различить признаки сезонных
                                 изменений и увеличения погодной активности на планете, вызванных приближением Урана к точке своего равноденствия.
                                 Скорость ветров на Уране может достигать 250 м/с (900 км/ч).
-                            </TextBlock>
-                        </StackPanel>
-                    </TabItem>
-                    <TabItem Header="Нептун">
-                        <StackPanel>
-                            <StackPanel.Background>
-                                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                    <GradientStop Color="#FF23796F"/>
-                                    <GradientStop Color="#FF792323" Offset="1"/>
-                                </LinearGradientBrush>
-                            </StackPanel.Background>
-                            <TextBlock TextWrapping="Wrap">
+                                </TextBlock>
+                            </StackPanel>
+                        </TabItem>
+                        <TabItem Header="Нептун" Name="TabNeptune">
+                            <StackPanel>
+                                <StackPanel.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="#FF23796F"/>
+                                        <GradientStop Color="#FF792323" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </StackPanel.Background>
+                                <TextBlock TextWrapping="Wrap"  Margin="5" Name="TextNeptune">
                                 Непту́н — восьмая и самая дальняя от Солнца планета Солнечной системы. Его масса превышает массу Земли в 17,2 
                                 раза и является третьей среди планет Солнечной системы, а по экваториальному диаметру Нептун занимает четвёртое
                                 место, превосходя Землю в 3,9 раза. Планета названа в честь Нептуна — римского бога морей.
@@ -380,18 +392,18 @@
                                 составляет, по различным оценкам, от 5000 K до 7000—7100 °C, что сопоставимо с температурой на поверхности Солнца и 
                                 сравнимо с внутренней температурой большинства известных планет. У Нептуна есть слабая и фрагментированная система
                                 колец, возможно, обнаруженная ещё в 1960-е годы, но достоверно подтверждённая «Вояджером-2» лишь в 1989 году.
-                            </TextBlock>
-                        </StackPanel>
-                    </TabItem>
-                    <TabItem Header="Девятая планета">
-                        <StackPanel>
-                             <StackPanel.Background>
-                                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                    <GradientStop Color="#FF792323"/>
-                                    <GradientStop Color="#FF0F2377" Offset="1"/>
-                                </LinearGradientBrush>
-                             </StackPanel.Background>
-                                <TextBlock TextWrapping="Wrap">
+                                </TextBlock>
+                            </StackPanel>
+                        </TabItem>
+                        <TabItem Header="Девятая планета" Name="TabNinePlanet">
+                            <StackPanel>
+                                <StackPanel.Background>
+                                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                        <GradientStop Color="#FF792323"/>
+                                        <GradientStop Color="#FF0F2377" Offset="1"/>
+                                    </LinearGradientBrush>
+                                </StackPanel.Background>
+                                <TextBlock TextWrapping="Wrap" Margin="5" Name="TextNinePlanet">
                                 Девятая планета — гипотетическая планета во внешней области Солнечной системы, гравитационное притяжение которой
                                 может объяснить среднюю аномалию в распределении орбит обособленных транснептуновых объектов (ТНО), обнаруженных
                                 в основном за пределами пояса Койпера в рассеянном диске. Неоткрытая планета размером с мининептун должна иметь
@@ -409,27 +421,27 @@
                                 Брауном предполагается, что планета могла быть захвачена от другой звезды являться захваченной планетой-сиротой или что
                                 она сформировалась на отдалённой орбите, которую вытянула проходящая близко звезда, хотя в дальнейшем внесолнечная
                                 гипотеза происхождения планеты была отвергнута.
-                                
-                            </TextBlock>
-                        </StackPanel>
-                    </TabItem>
-                    <TabItem Header="Контакты">
-                        <StackPanel>
-                            <Grid>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="0.4*"/>
-                                    <ColumnDefinition/>
-                                </Grid.ColumnDefinitions>
-                                <StackPanel Grid.Column="0" Margin="5">
-                                    <Image Source="/img/2.jpg" Height="250" Stretch="UniformToFill"/>
-                                </StackPanel>
-                                <TextBlock Grid.Column="1" FontSize="24" Foreground="#FFF5E1DE">
-                                    <TextBlock.Background>
-                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                                            <GradientStop Color="#FF070A2D"/>
-                                            <GradientStop Color="#FF9AF3FF" Offset="1"/>
-                                        </LinearGradientBrush>
-                                    </TextBlock.Background>
+
+                                </TextBlock>
+                            </StackPanel>
+                        </TabItem>
+                        <TabItem Header="Контакты" Name="TabKontakt">
+                            <StackPanel>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="0.4*"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <StackPanel Grid.Column="0" Margin="5">
+                                        <Image Source="/img/2.jpg" Height="250" Stretch="UniformToFill"/>
+                                    </StackPanel>
+                                    <TextBlock Grid.Column="1" FontSize="24" Foreground="#FFF5E1DE"  Margin="5" Name="TextKontakt">
+                                        <TextBlock.Background>
+                                            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                                <GradientStop Color="#FF070A2D"/>
+                                                <GradientStop Color="#FF9AF3FF" Offset="1"/>
+                                            </LinearGradientBrush>
+                                        </TextBlock.Background>
                                     Телефон: 8(546)777-54-43-23
                                     <LineBreak/>
                                     Email: top-camp@kosmos.ru
@@ -438,12 +450,13 @@
                                     <LineBreak/>
                                     Свежие новости о космосе только у нас!
                                     <LineBreak/>
-                                </TextBlock>
-                            </Grid>
-                        </StackPanel>
-                    </TabItem>
-                </TabControl>
-            </StackPanel>
+                                    </TextBlock>
+                                </Grid>
+                            </StackPanel>
+                        </TabItem>
+                    </TabControl>
+                </StackPanel>
+            </Grid>
         </Grid>
-    </Grid>
+    </DockPanel>
 </Window>

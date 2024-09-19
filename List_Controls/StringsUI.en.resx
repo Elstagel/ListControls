@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TabEarth" xml:space="preserve">
+    <value>Earth</value>
+  </data>
+  <data name="TabJupiter" xml:space="preserve">
+    <value>Jupiter</value>
+  </data>
+  <data name="TabKontakt" xml:space="preserve">
+    <value>Kontakt</value>
+  </data>
+  <data name="TabMain" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="TabMars" xml:space="preserve">
+    <value>Mars</value>
+  </data>
+  <data name="TabMercury" xml:space="preserve">
+    <value>Mercury</value>
+  </data>
+  <data name="TabNeptun" xml:space="preserve">
+    <value>Neptun</value>
+  </data>
+  <data name="TabNinePlanet" xml:space="preserve">
+    <value>NinePlanet</value>
+  </data>
+  <data name="TabSaturn" xml:space="preserve">
+    <value>Saturn</value>
+  </data>
+  <data name="TabSolarSystem" xml:space="preserve">
+    <value>SolarSystem</value>
+  </data>
+  <data name="TabStruck" xml:space="preserve">
+    <value>Struck</value>
+  </data>
+  <data name="TabSun" xml:space="preserve">
+    <value>Sun</value>
+  </data>
+  <data name="TabUran" xml:space="preserve">
+    <value>Uran</value>
+  </data>
+  <data name="TabVenus" xml:space="preserve">
+    <value>Venus</value>
+  </data>
+  <data name="TextEarth" xml:space="preserve">
+    <value>Earth is the third planet in the Solar System by distance from the Sun. It is the densest, fifth in diameter and mass among all the 
+planets in the Solar System and the largest among the terrestrial planets, which also include Mercury, Venus and Mars. The only 
+body in the Universe currently known to man that is inhabited by living organisms. 
+
+Scientific evidence indicates that the Earth formed from a solar nebula about 4.54 billion years ago 
+Go to section "#History of the Earth" and soon after that acquired its only natural satellite - the Moon. Life, presumably, 
+appeared on Earth about 4.25 billion years ago, that is, soon after its origin. Since then, the Earth's biosphere has significantly changed the atmosphere and other abiotic factors, causing a quantitative increase in aerobic organisms, 
+as well as the formation of the ozone layer, which, together with the Earth's magnetic field, weakens harmful solar radiation, 
+thus preserving the conditions for life on Earth. Radiation caused by the Earth's crust itself has significantly decreased since its formation due to the gradual decay of radionuclides contained in it.The Earth's crust is divided into several segments, or tectonic plates, which move across the surface at speeds of several centimeters per year. The study of the composition, structure, and patterns of development of the Earth is the science of geology.
+
+Approximately 70.8% of the planet's surface is occupied by the World Ocean, the rest of the surface is occupied by continents and islands.
+On the continents are rivers, lakes, underground waters, and ice, which together with the World Ocean make up the hydrosphere.
+Liquid water, necessary for all known life forms, does not exist on the surface of any of the known planets 
+and planetoids of the Solar System, except Earth. The poles of the Earth are covered with an ice shell, which includes the sea ice 
+of the Arctic and the Antarctic ice sheet.</value>
+  </data>
+  <data name="TextJupiter" xml:space="preserve">
+    <value>Jupiter is the largest planet in the Solar System, the fifth in distance from the Sun. Along with Saturn, Jupiter is classified as a gas giant.
+The planet has been known to people since ancient times, which is reflected in the mythology and religious beliefs of various cultures: Mesopotamian, Babylonian, Greek and others. The modern name of Jupiter comes from the name of the ancient Roman supreme god of thunder.
+
+A number of atmospheric phenomena on Jupiter: storms, lightning, aurorae, have a scale that is orders of magnitude greater than on Earth. A notable
+formation in the atmosphere is the Great Red Spot - a giant storm known since the 17th century. 
+
+Jupiter has at least 80 satellites, the largest of which — Io, Europa, Ganymede, and Callisto — were discovered by Galileo 
+Galilei in 1610. 
+
+Jupiter is studied using ground-based and orbital telescopes; since the 1970s, 8 NASA interplanetary spacecraft have been sent to the planet: Pioneers, Voyagers, Galileo, Juno, and others.&lt;LineBreak/&gt;
+During great oppositions (one of which occurred in September 2010), Jupiter is visible to the naked eye as one of the brightest objects in the night sky after the Moon and Venus. Jupiter's disk and moons are popular 
+objects of observation for amateur astronomers, who have made a number of discoveries (for example, Comet Shoemaker-Levy, which 
+collided with Jupiter in 1994, Go to the section "#Collisions of celestial bodies with Jupiter" or the disappearance of Jupiter's southern 
+equatorial belt in 2010).</value>
+  </data>
+  <data name="TextKontakt" xml:space="preserve">
+    <value>Phone: 8(546)777-54-43-23
+
+Email: (hidden)
+
+Works 24-7 for you.
+
+Latest news about space only with us!
+</value>
+  </data>
+  <data name="TextMain" xml:space="preserve">
+    <value>Here are the best materials on space!
+
+The information is verified and updated every day, thanks to joint efforts!
+
+At the moment, our professionals are translating the site into different languages, so at the moment not everything is translated.
+
+We will fix this soon!!</value>
+  </data>
+  <data name="TextMars" xml:space="preserve">
+    <value>Mars is the fourth planet from the Sun and the seventh largest in the Solar System; its mass is 10.7% of the Earth's mass. Go to the section "#Basic information" It is named after Mars, the ancient Roman god of war, corresponding to the ancient Greek Ares. Go to the section "#In ancient mythology" Mars is also called the "red planet" because of the reddish tint of its surface, given to it by the mineral maghemite - γ-iron(III) oxide. 
+Mars is a terrestrial planet with a thin atmosphere (the surface pressure is 160 times less than on Earth). Go to the section
+"#Atmosphere and climate" The surface relief of Mars can be characterized by impact craters similar to those on the moon, as well as 
+volcanoes, valleys, deserts and polar ice caps similar to those on Earth. Go to the section "#Ice and polar caps"
+
+Mars has two natural satellites - Phobos and Deimos (translated from ancient Greek - "fear" and "horror", the names of the two 
+sons of Ares who accompanied him into battle), which are relatively small (Phobos - 26.8 × 22.4 × 18.4 km, Deimos - 15 × 12.2 × 10.4 km) 
+and have an irregular shape.
+Since 1962, direct exploration of Mars using AMS has been carried out by the USSR (the Mars and Phobos programs) and the USA
+(the Mariner, Viking, Mars Global Surveyor programs and others), as well as the European
+Space Agency (the Mars Express program), India (the Mangalyaan program) and China (Tianwen-1, Zhuzhong). To date, Mars is the most thoroughly studied planet in the Solar
+system after Earth.Go to section.</value>
+  </data>
+  <data name="TextMercury" xml:space="preserve">
+    <value>Mercury is the smallest planet in the Solar System and the closest to the Sun. It is named after the Roman god of commerce, Swift Mercury, because it moves across the sky faster than the other planets. Its period of revolution around the Sun is only 87.97 Earth days - the shortest of all the planets in the Solar System. 
+&lt;LineBreak/&gt; 
+Mercury's apparent distance from the Sun, as seen from Earth, never exceeds 28°. This proximity to the Sun means that the planet can only be seen for a short time after sunset or before sunrise, usually at twilight. 
+With a telescope, Mercury can be seen in phases that vary from a thin crescent to an almost full disk, like Venus and the Moon, 
+and sometimes it passes across the disk of the Sun. The period of Mercury's phase changes is equal to its synodic period of revolution - about 116 days. &lt;LineBreak/&gt;
+Mercury's axis has the smallest tilt of any planet in the Solar System (about 1/30 of a degree). However, its orbital eccentricity is the greatest of all, and so at perihelion, Mercury's distance from the Sun is only about two-thirds (66%) of its distance at aphelion.Mercury's surface is pockmarked with impact craters and is similar in appearance to the Moon, indicating 
+a lack of internal geological activity in the last billion years. Since Mercury has almost no atmosphere, 
+its surface temperature varies more than any other planet in the Solar System, from 100 K (−173 °C) at night 
+to 700 K (+427 °C) during the day in the equatorial regions.[12] The polar regions are consistently cooled below 180 K (−93 °C). 
+The planet has no known natural satellites.</value>
+  </data>
+  <data name="TextNeptune" xml:space="preserve">
+    <value>Neptune is the eighth and farthest planet from the Sun in the Solar System. Its mass is 17.2 times that of Earth and it is the third largest planet in the Solar System, and Neptune has the fourth largest equatorial diameter, 3.9 times larger than Earth. The planet is named after Neptune, the Roman god of the seas.
+
+Discovered on September 23, 1846, Neptune became the first planet discovered using mathematical calculations.
+The discovery of unpredictable changes in Uranus' orbit gave rise to the hypothesis of an unknown planet, the gravitational
+perturbation of which caused them. Neptune was found within the predicted orbit. Soon, its largest satellite, Triton, was discovered, and in 1949, Nereid. Neptune has only been visited by one spacecraft, Voyager 2, which flew by the planet on August 24–25, 1989. It discovered Neptune's rings and six of its satellites. The remaining known satellites of Neptune were discovered in the 21st century. 
+
+Neptune is similar in composition to Uranus, and both planets differ from the larger giant planets Jupiter 
+and Saturn. Uranus and Neptune are sometimes placed in a separate category of "ice giants."Neptune's atmosphere, 
+like those of Jupiter and Saturn, is composed primarily of hydrogen and helium, with traces of hydrocarbons and possibly nitrogen, but contains a higher proportion of ices: water, ammonia, and methane. The interiors of Neptune and Uranus 
+are composed primarily of ices and rock. Traces of methane in the outer atmospheres are responsible for the planet's blue color. 
+
+Neptune's atmosphere has the strongest winds of any planet in the Solar System, with speeds estimated to reach 600 m/s. Neptune's upper atmospheric temperature is close to -220 °C. Neptune's central temperature 
+has been estimated to range from 5000 K to 7000–7100 °C, comparable to the surface temperature of the Sun and 
+comparable to the internal temperature of most known planets. Neptune has a faint and fragmented ring system, possibly discovered as early as the 1960s, but only confirmed by Voyager 2 in 1989.</value>
+  </data>
+  <data name="TextNinePlanet" xml:space="preserve">
+    <value>Planet Nine is a hypothetical planet in the outer Solar System whose gravitational attraction could explain the average anomaly in the distribution of orbits of isolated trans-Neptunian objects (TNOs), found mostly outside the Kuiper belt in the scattered disk. An undiscovered mini-Neptune-sized planet would have a mass of 5-10M⊕, a diameter two to four times that of Earth, and an elongated orbit with an orbital period of approximately 15,000 Earth years. To date, searches for Planet Nine have been unsuccessful.
+
+The suggestion that the clustering of the orbits of the most distant objects was due to the influence of a planet beyond Neptune arose in 2014, when astronomers Chadwick Trujillo and Scott Sheppard noted similarities in the orbits of Sedna, 2012 VP113, and several other objects.In early 2016, Konstantin Batygin and Michael Brown described how the
+similar orbits of six TNOs could be explained by Planet Nine, and proposed possible parameters for its orbit;
+this hypothesis could also explain the existence of TNOs with orbits perpendicular to the plane of rotation of the inner planets
+and others with extreme tilts and tilts as well as the tilt of the Sun's rotation axisGo to section "#Batygin and Brown
+(2016)". They propose that Planet Nine is the core of an incipient gas giant that was ejected
+from its original orbit by Jupiter during the formation of the Solar System. Konstantin Batygin and Michael
+Brown also suggest that the planet could have been captured from another star (be a captured orphan planet) or that
+it formed in a distant orbit that was pulled out by a passing star, although the extrasolar
+hypothesis for the planet's origin has since been rejected.</value>
+  </data>
+  <data name="TextSaturn" xml:space="preserve">
+    <value>Saturn is the sixth planet from the Sun and the second largest planet in the Solar System after Jupiter.
+Saturn is classified as a gas giant planet. Saturn is named after the Roman god of agriculture. Go to 
+section "#Saturn in Culture" Saturn's symbol is ♄.
+
+Saturn is mostly composed of hydrogen, with traces of helium and water, methane, ammonia and heavier elements.
+The inner region is a relatively small core of iron, nickel and ice, covered by a thin layer of metallic hydrogen and a gaseous outer layer. The planet's outer atmosphere appears calm and homogeneous from space, although long-term formations sometimes appear on it. Wind speeds on Saturn can reach 1,800 km/h in places, which is significantly greater than on Jupiter. Saturn has a planetary magnetic field that is intermediate in strength between the Earth's magnetic field and Jupiter's powerful field. Saturn's magnetic field extends 1,000,000 kilometers toward the Sun. The shock wave was detected by Voyager 1 at a distance of 26.2 Saturn radii from the planet itself, and the magnetopause is located at a distance of 22.9 radii.
+Saturn has a noticeable ring system, consisting mainly of ice particles, smaller amounts of heavier 
+elements and dust. There are 83 currently known moons orbiting the planet.[2] Titan is the largest of them, and the second-largest moon in the Solar System (after Jupiter's moon Ganymede), which is larger than Mercury and has the only dense atmosphere among the satellites of the planets in the Solar System.
+
+The Cassini spacecraft orbited Saturn, launched in 1997, and reached the Saturn system in 2004. The mission of the Cassini spacecraft included studying the structure of the rings, as well as the dynamics of the planet's atmosphere and magnetosphere. On September 15, 2017, the spacecraft completed its mission, burning up in the planet's atmosphere.</value>
+  </data>
+  <data name="TextSolarSystem" xml:space="preserve">
+    <value>The Solar System is a planetary system that includes the central star, the Sun, and all natural celestial bodies in 
+heliocentric orbits. It formed by the gravitational compression of a cloud of gas and dust approximately 4.57 billion years ago. 
+
+The four planets closest to the Sun, called the terrestrial planets — Mercury, Venus, Earth, and Mars — are composed
+primarily of silicates and metals. The four planets farther from the Sun — Jupiter, Saturn, Uranus, and Neptune 
+(also called the gas giants) — are much more massive than the terrestrial planets. The largest planets in the Solar System, Jupiter and Saturn, are composed primarily of hydrogen and helium; smaller gas giants, 
+Uranus and Neptune, in addition to hydrogen and helium, contain mainly water, methane and ammonia, such planets are allocated to a separate 
+class of "ice giants". Six of the eight planets and four dwarf planets have natural satellites. Jupiter, Saturn, Uranus 
+and Neptune are surrounded by rings of dust and other particles. 
+
+There are two regions in the solar system filled with small bodies.The asteroid belt between Mars and Jupiter is similar in composition to the terrestrial planets, consisting of silicates and metals. The largest objects in the asteroid belt are the dwarf planet Ceres and the asteroids Pallas, Vesta, and Hygiea. Beyond Neptune are the trans-Neptunian objects, composed of frozen water, ammonia, and methane, the largest of which are Pluto, Sedna, Haumea, Makemake, Quaoar, Orcus, and Eris. There are other populations of small bodies in the Solar System, such as planetary quasi-satellites and Trojans, near-Earth asteroids, centaurs, damocloids, and comets, meteoroids, and cosmic dust moving through the system.</value>
+  </data>
+  <data name="TextStruct" xml:space="preserve">
+    <value>The central object of the Solar System is the Sun, a main sequence star of spectral class G2V, a yellow dwarf. 
+The Sun contains the overwhelming majority of the total mass of the system (about 99.866%), it holds the planets and other bodies belonging to the Solar System with its 
+gravity. The four largest objects, the gas giants, make up 99% of the remaining mass (with Jupiter and Saturn accounting for the largest part, about 90%). 
+
+Most large objects orbiting the Sun move in almost the same plane, called the ecliptic plane. 
+At the same time, comets and Kuiper Belt objects often have large angles of inclination to this plane. 
+
+All planets and most other objects orbit the Sun in the same direction as the Sun's rotation (counterclockwise, 
+if viewed from the Sun's north pole). There are exceptions, such as Halley's Comet. The highest angular velocity is possessed by
+Mercury - it manages to make a full revolution around the Sun in just 88 Earth days.
+And for the most distant planet - Neptune - the period of revolution is 165 Earth years.
+
+Most of the planets rotate around their axis in the same direction as they revolve around the Sun. The exceptions are Venus and Uranus,
+and Uranus rotates practically "lying on its side" (the tilt of the axis is about 90°).
+A special device - tellurium - is used to clearly demonstrate the rotation.</value>
+  </data>
+  <data name="TextSun" xml:space="preserve">
+    <value>The Sun is the star of the Solar System and its main component. Its mass (332,900 Earth masses) is large enough to support 
+thermonuclear reactions in its interior, releasing large amounts of energy that are radiated into space, mainly 
+as electromagnetic radiation, with a maximum in the 400–700 nm wavelength range, corresponding to visible light. 
+&lt;LineBreak/&gt; 
+According to stellar classification, the Sun is a typical yellow dwarf of class G2. This name can be misleading, since compared 
+to most stars in our Galaxy, the Sun is quite large and bright. The class of a star is determined by its position on the 
+Hertzsprung–Russell diagram, which shows the relationship between the brightness of stars and their surface 
+temperature. Hotter stars are usually brighter. Most stars are on the so-called main sequence of this diagram, with the Sun located 
+approximately in the middle of this sequence. Stars brighter and hotter than the Sun are relatively rare, while dimmer and cooler stars (red dwarfs) are common, making up 85% of the stars in the Galaxy.&lt;LineBreak/&gt;
+The Sun's position on the main sequence shows that it has not yet exhausted its supply of hydrogen for nuclear fusion and is 
+roughly in the middle of its evolution. The Sun is now gradually becoming brighter, having 
+only 70% of its current brightness in earlier stages of its evolution.
+
+&lt;LineBreak/&gt;
+The Sun is a Population I star, formed at a relatively late stage in the Universe's evolution and 
+therefore has a higher content of elements heavier than hydrogen and helium (called "metals" in astronomy) 
+than older Population II stars. Elements heavier than hydrogen and helium are formed in the cores of the first stars, so 
+the first generation of stars had to pass before the Universe could be enriched with these elements. The oldest 
+stars contain few metals, while younger stars contain more. It is assumed that high metallicity was 
+critical for the formation of a planetary system around the Sun, because planets form by accretion of "metals".</value>
+  </data>
+  <data name="TextUranus" xml:space="preserve">
+    <value>Uranus is a planet in the Solar System, the seventh farthest from the Sun, the third largest in diameter, and the fourth most massive. 
+It was discovered in 1781 by the English astronomer William Herschel and named after the Greek god of the sky, Uranus. 
+
+ Uranus was the first planet discovered in modern times and with the help of a telescope. It was discovered by William Herschel on March 13, 1781, thus expanding the boundaries of the Solar System in the eyes of man for the first time since antiquity. 
+Although Uranus is sometimes visible to the naked eye, earlier observers mistook it for a dim star. 
+
+Unlike the gas giants Saturn and Jupiter, which consist mainly of hydrogen and helium, the interiors of Uranus
+and similar Neptune lack metallic hydrogen, but contain a lot of ice in its high-temperature
+modifications. For this reason, experts have classified these two planets in a separate category of "ice giants".
+The atmosphere of Uranus is mainly composed of hydrogen and helium. In addition, traces of methane and other hydrocarbons, as well as clouds of ice, solid ammonia and hydrogen have been found in it. This is the coldest planetary atmosphere
+in the Solar System with a minimum temperature of 49 K (−224 °C).It is believed that Uranus has a complex layered structure
+of clouds, where water makes up the lower layer and methane makes up the upper layer. The interior of Uranus consists mainly of ice and rock
+
+Like the gas giants of the Solar System, Uranus has a system of rings and a magnetosphere, and in addition,
+27 satellites. The orientation of Uranus in space differs from the other planets of the Solar System - its axis of rotation
+lies as if "on its side" relative to the plane of this planet's revolution around the Sun. As a result, the planet is alternately
+facing the Sun with its north pole, then its south pole, then its equator, then its mid-latitudes.
+
+In 1986, the American spacecraft Voyager 2 transmitted images of Uranus to Earth from a close distance.
+They show a "nondescript" planet in the visible spectrum, without cloud bands and atmospheric storms typical of other giant planets. However, at present, ground-based observations have managed to discern signs of seasonal changes and increased weather activity on the planet, caused by Uranus approaching its equinox. Wind speeds on Uranus can reach 250 m/s (900 km/h).</value>
+  </data>
+  <data name="TextVenus" xml:space="preserve">
+    <value>Venus is the second planet from the Sun and the sixth largest in the Solar System, along with Mercury, Earth and Mars
+and belongs to the family of terrestrial planets. It is named after the ancient Roman goddess of love, Venus. According to a number of characteristics, such as its mass and size, Venus is considered the "sister" of the Earth. The Venusian year is 224.7 Earth days. It has the longest period of rotation around its axis (about 243 Earth days, an average of 243.0212 ± 0.00006 days) of all the planets
+in the Solar System and rotates in the direction opposite to the rotation of most planets.
+
+Venus has no natural satellites. It is the third brightest object in the Earth's sky, after the Sun and the Moon. The planet reaches a visible stellar magnitude of -4.6m, so it is bright enough to cast shadows at night. Venus is occasionally visible to the naked eye during daylight hours.
+
+Venus has a dense atmosphere, consisting of more than 96% carbon dioxide. The atmospheric pressure on the planet's surface is 92 times greater than on the Earth's surface, and is approximately equal to the pressure of water at a depth of 900 meters.Due to the high pressure, 
+carbon dioxide in the near-surface part of the atmosphere is no longer a gas in its aggregate state, but a supercritical liquid, 
+therefore this part of the atmosphere is a "semi-liquid-semi-gaseous" ocean of supercritical carbon dioxide. 
+Venus is the hottest planet in the Solar System: its average surface temperature is 735 K (462 °C), even though 
+Mercury is closer to the Sun. Venus is covered with an opaque layer of clouds of sulfuric acid with high reflectivity, 
+which, among other things, obscures the planet's surface from direct visibility. The high surface temperature 
+is due to the greenhouse effect.</value>
+  </data>
+</root>
